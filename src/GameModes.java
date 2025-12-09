@@ -124,6 +124,7 @@ public class GameModes {
         String name = in.nextLine().trim();
         if (name.isEmpty()) name = "Anonymous";
         g.leaderboard.add(new DungeonData.LeaderboardEntry(name, gold));
+        LeaderboardPersistence.save(g.leaderboard);
         System.out.println("Score saved!");
     }
 
@@ -134,6 +135,7 @@ public class GameModes {
         String name = in.nextLine().trim();
         if (name.isEmpty()) name = "Anonymous";
         g.leaderboard.add(new DungeonData.LeaderboardEntry(name, gold));
+        LeaderboardPersistence.save(g.leaderboard);
         System.out.println("Score saved!");
     }
 

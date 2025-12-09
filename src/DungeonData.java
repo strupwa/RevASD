@@ -1,3 +1,4 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -191,7 +192,8 @@ public class DungeonData {
     }
 
     // Leaderboard + GameData
-    public static class LeaderboardEntry {
+    public static class LeaderboardEntry implements Serializable {
+        private static final long serialVersionUID = 1L;
         public String name;
         public int gold;
 

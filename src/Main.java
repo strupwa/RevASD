@@ -7,6 +7,9 @@ public class Main {
         DungeonData dungeon = new DungeonData();
         dungeon.initializeDungeon();
         DungeonData.GameData game = new DungeonData.GameData(dungeon);
+        
+        // Load saved leaderboard
+        game.leaderboard = LeaderboardPersistence.load();
 
         Scanner input = new Scanner(System.in);
 
