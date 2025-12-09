@@ -109,7 +109,7 @@ public class Main {
         int limit = Math.min(5, sorted.size());
         for (int i = 0; i < limit; i++) {
             DungeonData.LeaderboardEntry e = sorted.get(i);
-            System.out.printf("%d. %s — %d Gold%n", i + 1, e.name, e.gold);
+            System.out.printf("%d. %s = %d Gold%n", i + 1, e.name, e.gold);
         }
     }
 
