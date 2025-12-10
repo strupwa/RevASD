@@ -81,6 +81,7 @@ public class Main {
             System.out.println();
         }
 
+        // list edges or connections nya
 //        System.out.println("==== ADJACENCY (simple list) ====");
 //        for (int id : d.graph.keySet()) {
 //            DungeonData.Room r = d.rooms.get(id);
